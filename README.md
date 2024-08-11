@@ -5,20 +5,7 @@ This project aims to perform sentiment analysis on mobile reviews using various 
 
 **Publication**: International Journal of Computer Science Trends and Technology (IJCST) – Volume 9 Issue 3, May-Jun 2021  
 **Authors**: Aditi Linge, Bhavya Malviya, Digvijay Raut, Payal Ekre  
-**Institution**: Department of Information Technology, Government College of Engineering, Amravati, Maharashtra, India  
-
-## Abstract
-In a world where machines are increasingly capable of understanding human emotions, this project demonstrates how a machine can determine whether a mobile review is positive or negative using Natural Language Processing (NLP). The sentiment analysis of product reviews has become a significant area of research in text mining and computational linguistics. This project specifically analyzes mobile reviews, using the Logistic Regression algorithm for classification.
-
-## Keywords
-- Machine Learning
-- Mobile Review
-- Logistic Regression
-- N-gram
-- Support Vector Machine (SVM)
-- Random Forest Classifier
-- Count Vectorizer
-- TF-IDF
+**Institution**: Department of Information Technology, Government College of Engineering, Amravati, Maharashtra, India
 
 ## Introduction
 Sentiment analysis is an automated process for understanding the emotions underlying a text. This project investigates whether sentiment analysis can be used to classify mobile reviews from customers into positive or negative categories. The analysis is conducted using various machine learning algorithms, and the results can help businesses refine their strategies based on customer feedback.
