@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .open {
+        display: contents;
+        }
+
+        .box {
+        height: 500px;
+        width: 25%;
+        border: 3px solid black;
+        box-sizing: border-box;
+        }
+
+        .img-responsive {
+            padding: 50px;
+        }
+
+        button {
+            float: right;
+            margin-right: 50%;
+            color: cornsilk;
+            background-color: rgb(0, 118, 197);
+            font-size: 16px;
+        }
+
+        p {
+            font: 17px Times New Roman;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome {{ name }}</h1>
+    <a href="{{ url_for('logout') }}" class="active">Log Out</a>
+    <div class="parent">
+        <div class="child open">
+          {%for i in range(9)%}
+					<div class="box">
+					
+                            <img class="img-responsive" src= {{img[i]}}> 
+                            <a href="{{ url_for('mobileSpecifications') }}">
+                                <input type="submit" value="{{data[i]}}">
+                            </a>
+							<button>View</button>
+                            
+                    </div>
+			{% endfor %}
+        </div>
+      </div>
+</body>
+</html>

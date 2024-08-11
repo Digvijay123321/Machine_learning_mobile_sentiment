@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="b131bd78-cdc9-46eb-9ab1-b3fa42ec7b74" data-root-id="1296"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1441">
+          {"6d854005-f903-4648-a8b8-909dcfc8e2aa":{"roots":{"references":[{"attributes":{},"id":"1319","type":"HelpTool"},{"attributes":{"items":[{"id":"1343"},{"id":"1358"}],"location":"top_left","orientation":"horizontal"},"id":"1342","type":"Legend"},{"attributes":{"label":{"value":"Positive"},"renderers":[{"id":"1332"}]},"id":"1343","type":"LegendItem"},{"attributes":{"data_source":{"id":"1295"},"glyph":{"id":"1330"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1331"},"selection_glyph":null,"view":{"id":"1333"}},"id":"1332","type":"GlyphRenderer"},{"attributes":{},"id":"1315","type":"WheelZoomTool"},{"attributes":{},"id":"1314","type":"PanTool"},{"attributes":{"overlay":{"id":"1320"}},"id":"1316","type":"BoxZoomTool"},{"attributes":{},"id":"1317","type":"SaveTool"},{"attributes":{},"id":"1318","type":"ResetTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1314"},{"id":"1315"},{"id":"1316"},{"id":"1317"},{"id":"1318"},{"id":"1319"},{"id":"1359"}]},"id":"1321","type":"Toolbar"},{"attributes":{},"id":"1336","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"tooltips":[["Positive review","@Positive"],["Negative review","@Negative"]]},"id":"1359","type":"HoverTool"},{"attributes":{"range":{"id":"1299"}},"id":"1328","type":"Dodge"},{"attributes":{"below":[{"id":"1307"}],"center":[{"id":"1309"},{"id":"1313"},{"id":"1342"}],"left":[{"id":"1310"}],"plot_height":550,"plot_width":1500,"renderers":[{"id":"1332"},{"id":"1348"}],"title":{"id":"1297"},"toolbar":{"id":"1321"},"toolbar_location":"below","x_range":{"id":"1299"},"x_scale":{"id":"1303"},"y_range":{"id":"1301"},"y_scale":{"id":"1305"}},"id":"1296","subtype":"Figure","type":"Plot"},{"attributes":{"range":{"id":"1299"},"value":0.25},"id":"1344","type":"Dodge"},{"attributes":{"factors":["Apple iphone 12 pro max","Moto e7 plus","Nokia 2.4","Poco m2pro","Realme C12","Redmi 8A","Redmi 8A dual","Samsung galaxy F41","Vivo V19"],"range_padding":0.1},"id":"1299","type":"FactorRange"},{"attributes":{"fill_color":{"value":"#718dbf"},"line_color":{"value":"#718dbf"},"top":{"field":"Positive"},"width":{"value":0.2},"x":{"field":"mobiles","transform":{"id":"1328"}}},"id":"1330","type":"VBar"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1320","type":"BoxAnnotation"},{"attributes":{},"id":"1339","type":"UnionRenderers"},{"attributes":{"text":"Storage","text_font_size":{"value":"30pt"}},"id":"1297","type":"Title"},{"attributes":{"source":{"id":"1295"}},"id":"1349","type":"CDSView"},{"attributes":{},"id":"1340","type":"Selection"},{"attributes":{"fill_color":{"value":"#e84d60"},"line_color":{"value":"#e84d60"},"top":{"field":"Negative"},"width":{"value":0.2},"x":{"field":"mobiles","transform":{"id":"1344"}}},"id":"1346","type":"VBar"},{"attributes":{},"id":"1311","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#e84d60"},"line_alpha":{"value":0.1},"line_color":{"value":"#e84d60"},"top":{"field":"Negative"},"width":{"value":0.2},"x":{"field":"mobiles","transform":{"id":"1344"}}},"id":"1347","type":"VBar"},{"attributes":{},"id":"1303","type":"CategoricalScale"},{"attributes":{},"id":"1338","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"1307"},"grid_line_color":null,"ticker":null},"id":"1309","type":"Grid"},{"attributes":{"label":{"value":"Negative"},"renderers":[{"id":"1348"}]},"id":"1358","type":"LegendItem"},{"attributes":{"end":10},"id":"1301","type":"Range1d"},{"attributes":{"data_source":{"id":"1295"},"glyph":{"id":"1346"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1347"},"selection_glyph":null,"view":{"id":"1349"}},"id":"1348","type":"GlyphRenderer"},{"attributes":{},"id":"1305","type":"LinearScale"},{"attributes":{"formatter":{"id":"1336"},"ticker":{"id":"1308"}},"id":"1307","type":"CategoricalAxis"},{"attributes":{"data":{"Negative":[5,3,5,2,2,2,1,2,6],"Positive":[4,4,3,7,5,6,8,7,4],"mobiles":["Apple iphone 12 pro max","Moto e7 plus","Nokia 2.4","Poco m2pro","Realme C12","Redmi 8A","Redmi 8A dual","Samsung galaxy F41","Vivo V19"]},"selected":{"id":"1340"},"selection_policy":{"id":"1339"}},"id":"1295","type":"ColumnDataSource"},{"attributes":{},"id":"1308","type":"CategoricalTicker"},{"attributes":{"axis":{"id":"1310"},"dimension":1,"ticker":null},"id":"1313","type":"Grid"},{"attributes":{"source":{"id":"1295"}},"id":"1333","type":"CDSView"},{"attributes":{"formatter":{"id":"1338"},"ticker":{"id":"1311"}},"id":"1310","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#718dbf"},"line_alpha":{"value":0.1},"line_color":{"value":"#718dbf"},"top":{"field":"Positive"},"width":{"value":0.2},"x":{"field":"mobiles","transform":{"id":"1328"}}},"id":"1331","type":"VBar"}],"root_ids":["1296"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1441').textContent;
+                  var render_items = [{"docid":"6d854005-f903-4648-a8b8-909dcfc8e2aa","root_ids":["1296"],"roots":{"1296":"b131bd78-cdc9-46eb-9ab1-b3fa42ec7b74"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

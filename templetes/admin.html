@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style type="text/css">
+		.oneline
+		{
+			display: flex;
+			flex-wrap: wrap;
+			width: 80%;
+			height: 70px;
+			border: solid 1px #ccc;
+			background-color: white;
+			margin: 10px 10px 10px 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+		 <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+		 <a href="{{ url_for('admin_page') }}" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">Hello, Admin</a>
+		 
+		 
+		 <a href="{{ url_for('logout') }}" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-grey" title="Log out">
+			 <i class="fa fa-power-off"></i>
+			 LOG OUT
+		 </a>
+		</div>
+	</div>
+	<div style="display: flex; flex-wrap: wrap; justify-content: space-around; background-color: #4d636f; margin: 100px 50px 50px 50px">
+		{% for i in fet %}
+		<div class="oneline " style="margin: 20px 0px 20px 0px; text-align: center; justify-content: center;">
+			<div style="text-align: center; font-size: 40px;">
+				<a href="{{ url_for('to_graph', feature = i) }}" style="text-decoration:none;">{{ i }}</a>
+			</div>
+			
+		</div>
+		{% endfor %}
+		<div class="oneline">
+			<a href="#">Count</a>
+		</div>
+	</div>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
